@@ -26,7 +26,7 @@ let peeps = [
 ];
 console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
-// peopl is arr
+// people is arr
 function countScores(people) {
   let combinedScore ={}
   // your code here
