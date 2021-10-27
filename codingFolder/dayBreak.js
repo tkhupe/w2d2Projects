@@ -1216,51 +1216,70 @@ if (calculator( 42, "?", 42) === "Invalid Operator") score++;
 console.log("You have scored " + score + "/5 points."); */
 
 
-function getAverage(nums) {
-  let sum = 0;
-  for (i = 0; i < nums.length; i++) {
-    sum += nums[i];
+// function getAverage(nums) {
+//   let sum = 0;
+//   for (i = 0; i < nums.length; i++) {
+//     sum += nums[i];
 
 
-  }
-  return sum / nums.length;
+//   }
+//   return sum / nums.length;
 
+// }
+
+// function highestAverage(numsList) {
+//   let high = 0;
+//   let num = 0;
+//   for (let i = 0; i < numsList.length; i++) {
+//     let avg = getAverage(numsList[i]);
+//     if (high < avg) {
+//       high = avg;
+//       num = i;
+//     }
+
+//   }
+//   return num;
+
+//   // Your code here
+// }
+
+
+// // TESTS
+// // DO NOT MODIFY ANYTHING BELOW THIS LINE
+
+// const arrayA = [1, 2, 3, 4, 5];
+// const arrayB = [10000, -9998];
+// const arrayC = [2, 100, 55, 19];
+// const arrayD = [4, 8, 12];
+
+// let score = 0;
+
+// if (getAverage(arrayA) === 3) score++;
+// if (getAverage(arrayB) === 1) score++;
+// if (getAverage(arrayC) === 44) score++;
+// if (getAverage(arrayD) === 8) score++;
+
+// if (highestAverage([arrayA, arrayB, arrayC, arrayD]) === 2) score++;
+// if (highestAverage([arrayA, arrayB]) === 0) score++;
+// if (highestAverage([arrayA, arrayD]) === 1) score++;
+
+//  console.log("You have scored " + score + "/7 points.");
+
+
+function addition(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
 }
+function multiply(num1, num2, num3, num4) {
+  // find the sum of num1 and num2
+  // find the sumn of num3 and num4
+  let str1 = addition(num1, num2);
+  console.log(str1);
+  let str2 = addition(num3, num4);
+  console.log(str2);
 
-function highestAverage(numsList) {
-  let high = 0;
-  let num = 0;
-  for (let i = 0; i < numsList.length; i++) {
-    let avg = getAverage(numsList[i]);
-    if (high < avg) {
-      high = avg;
-      num = i;
-    }
-
-  }
-  return num;
-
-  // Your code here
+  let answer = str1 * str2;
+  return answer;
+  // multpily the sum of those numbers
 }
-
-
-// TESTS
-// DO NOT MODIFY ANYTHING BELOW THIS LINE
-
-const arrayA = [1, 2, 3, 4, 5];
-const arrayB = [10000, -9998];
-const arrayC = [2, 100, 55, 19];
-const arrayD = [4, 8, 12];
-
-let score = 0;
-
-if (getAverage(arrayA) === 3) score++;
-if (getAverage(arrayB) === 1) score++;
-if (getAverage(arrayC) === 44) score++;
-if (getAverage(arrayD) === 8) score++;
-
-if (highestAverage([arrayA, arrayB, arrayC, arrayD]) === 2) score++;
-if (highestAverage([arrayA, arrayB]) === 0) score++;
-if (highestAverage([arrayA, arrayD]) === 1) score++;
-
- console.log("You have scored " + score + "/7 points.");
+console.log(multiply(5, 4, 2, 3));

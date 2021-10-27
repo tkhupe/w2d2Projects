@@ -6,27 +6,23 @@ duplicates.
 Solve this using Array's `forEach()`, `map()`, `filter()` **OR** `reduce()`
 methods.
 
-Examples: */
-
-let unique = function (arr) {
-    let newArr = [];
-    arr.forEach(function (ele) {
-        if (!newArr.includes(ele)) {
-            newArr, push(ele);
-        }
-
-    })
-    return newArr;
-}
+Examples:
 
 console.log(unique([1, 1, 2, 3, 3])); // [1, 2, 3]
 console.log(unique([11, 7, 8, 10, 8, 7, 7])); // [11, 7, 8, 10]
 console.log(unique(['a', 'b', 'c', 'b'])); // ['a', 'b', 'c']
 
+*/
 
-
-// your code here
-
+let unique = function(array) {
+    let uniques = [];
+    array.forEach(function(el) {
+        if (!uniques.includes(el)) {
+            uniques.push(el);
+        }
+    });
+    return uniques;
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
