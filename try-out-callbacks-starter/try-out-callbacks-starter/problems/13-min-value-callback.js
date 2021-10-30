@@ -10,11 +10,26 @@ console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3
 
 *******************************************************************************/
 
-let minValueCallback = function() {
+let minValueCallback = function (arr, cb) {
+  let minValue = 0;
+  for (let i = 0; i < arr.length; i++) {
 
-};
+
+  // arr.forEach(function (cb) {
+    let el = arr[i];
+    if (cb(el) !== undefined) {
+      minValue = el;
+      return minValue;
+
+    }
+    else return (cb(el))
 
 
+}
+
+
+console.log(minValueCallback([64, 25, 49, 9, 100]));             // 9
+console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3
 
 
 

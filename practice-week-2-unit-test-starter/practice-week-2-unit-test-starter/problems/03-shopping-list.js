@@ -20,10 +20,21 @@ console.log(clothesList); // ['tshirt', 'pants']
 ***********************************************************************/
 
 function shoppingList(list) {
+  let shopping = list;
+  return (item) => {
+    shopping.push(item);
+    return shopping;
+  }
 
   // your code here
 
 }
+
+const clothesList = []
+const addToClothesList = shoppingList(clothesList);
+addToClothesList('tshirt'); // returns ['tshirt']
+addToClothesList('pants'); // returns ['tshirt', 'pants']
+console.log(clothesList); // ['tshirt', 'pants']
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = shoppingList;

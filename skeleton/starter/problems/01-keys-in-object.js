@@ -24,8 +24,13 @@ function keysInObject(obj) {
   //   // your code here
   // }
 
-  return Object.keys(obj);
+//  return Object.keys(obj);
+newArr =[];
+for (let key in obj) {
+   newArr.push(key);
 
+}
+return newArr;
 }
 
 let animals = { dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo' }
